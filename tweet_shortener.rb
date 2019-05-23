@@ -41,7 +41,8 @@ end
 #===============================
 def shortened_tweet_truncator(tweet)
   if selective_tweet_shortener(tweet).length > 140
-    bleeple = selective_tweet_shortener(tweet)[137..140].delete 
+    vari = selective_tweet_shortener(tweet).length
+    bleeple = selective_tweet_shortener(tweet)[137..vari].delete 
     binding.pry
     truncated_tweet = bleeple += "..."
     truncated_tweet
