@@ -48,4 +48,5 @@ def shortened_tweet_truncator(tweet)
     truncated_tweet
   else bloople = selective_tweet_shortener(tweet)
     bloople
+  end
 end
